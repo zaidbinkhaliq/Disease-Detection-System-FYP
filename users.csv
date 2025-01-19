@@ -1,0 +1,3 @@
+id,name,username,email,password,otp,created_at,is_verified,is_admin,status,token
+44,Ali,son,muhammad.bscs4308@iiu.edu.pk,$2y$10$AgvdXNC/ZRiJLxR3emIkJ.W0QhmH.EWkZBLas.ZzIHnUTchH7N8qm,323728,"2024-08-28 21:40:04",1,1,active,0f964d345bedb69aa78040b9530ac87578aca358c84c3c3961a2ba77f62baba1
+47,qwe,fg,tahirziad2158@gmail.com,$2y$10$Oj0lXKsv4Ndk.3q7TX6GJubXetZmxTiU5/iJGi5RMLIx7cnYf07Qi,555136,"2024-08-29 14:32:09",1,0,active,NULL

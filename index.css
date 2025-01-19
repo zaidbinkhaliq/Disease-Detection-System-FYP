@@ -1,0 +1,151 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+form {
+    height: 710px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.03);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+form * {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #5c5a5a;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+input::placeholder {
+    color: #eaeaea;
+}
+
+input:hover {
+    outline: 2px solid #0001;
+}
+
+button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+
+button:hover {
+    background-color: #ebebeb;
+}
+
+.social {
+    margin-top: 30px;
+    display: flex;
+}
+
+.social div {
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255, 255, 255, 0.27);
+    color: #eaf0fb;
+    text-align: center;
+    transition-duration: .4s;
+}
+
+.social div:hover {
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+.reg {
+    padding-top: 30px;
+    text-decoration: none;
+}
+
+.fp {
+    padding-top: 8px;
+    text-decoration: none;
+}
+
+.rg {
+    text-decoration: none;
+}
+
+.fp1 {
+    text-decoration: none;
+}
+
+
+/* Existing CSS for .reg */
+.reg {
+    padding-top: 30px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip styling */
+.reg::after {
+    content: "If you are already registered, click here to login";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Center tooltip horizontally */
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    opacity: 0; /* Hide tooltip by default */
+    visibility: hidden; /* Hide tooltip by default */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    z-index: 1; /* Ensure tooltip appears above other content */
+}
+
+/* Show tooltip on hover */
+.reg:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
